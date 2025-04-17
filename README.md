@@ -154,13 +154,13 @@ Documentation & Reporting: Exported key views and metrics as PDFs for sharing.
 
 ![Image](https://github.com/user-attachments/assets/c0ca22cf-6cad-4aaa-97a8-57af08cd8b9a)
 
-
+![Image](https://github.com/user-attachments/assets/d94596be-df38-464f-aa1b-cb1e626f1e0d)
 
 ![Image](https://github.com/user-attachments/assets/cdf4d2ed-7b5b-4d10-a2cd-699f72985fee)
 
 📊 1. Overall Sales and Collections Summary
 
-![Image](https://github.com/user-attachments/assets/d94596be-df38-464f-aa1b-cb1e626f1e0d)
+![Image](https://github.com/user-attachments/assets/b8a975a4-1391-4b80-83af-07c31abdde44)
 
 🌍 2. Regional Performance Breakdown
 
