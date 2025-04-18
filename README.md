@@ -191,3 +191,7 @@ Regional Manager Performance Review
 Credit Control and Collections
 
 Key Customer Relationship Management
+
+📬 Contact
+
+Author: AKPOVWOVWO OKEOGHENE JOHN Role: Data Analyst | BI SpecialistEmail: jbignames@gmail.com LinkedIn: linkedin.com/in/okeoghene-akpowwowo-0291a4150 | GitHub Handle: https://github.com/BigNameZ
