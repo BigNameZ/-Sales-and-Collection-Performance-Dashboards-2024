@@ -1,197 +1,88 @@
-***📊 Sales and Collection Performance Dashboards – 2024***
+# Sales and Collection Performance Dashboards (2024)
 
-This project presents an interactive business intelligence solution designed to analyze and visualize Sales and Collections performance across regions and customer segments for the year 2024.
+## Overview
+These **Power BI dashboards** provide a comprehensive analysis of 2024 sales and collection performance across regions, top customers, and monthly trends. Built with **Excel data models** and **DAX formulas**, they enable dynamic tracking of key metrics for strategic decision-making.
 
-**📟 Project Summary**
+---
 
-The dashboards offer a data-driven overview of sales and collection performance, enabling strategic insights into:
+## Key Dashboards
 
-Monthly sales and collections trends
+### 1. **Sales Performance Dashboard**
+   - **Top 50 Customers**:  
+     - John Charles LTD (£0.34bn), Jeffrey Jacobson LTD (£0.17bn), etc.  
+     - **66%** of total sales from top performers.  
+   - **Regional Breakdown**:  
+     - SOUTH-EAST dominates with **£1.5bn** sales.  
+   - **Monthly Trends**:  
+     - Visualized from Jan–Nov 2024 (peak: **£3bn**).  
 
-Regional distribution of sales and collections
+### 2. **Collection Performance Dashboard**
+   - **Top Collectors**:  
+     - Robert Atkinson LTD (£0.38bn), Elizabeth Rodriguez (£0.35bn).  
+   - **Regional Collections**:  
+     - SOUTH-SOUTH leads with **£1.9bn**.  
+   - **Efficiency Metrics**:  
+     - **86%** collection rate.  
 
-Top-performing customers
+### 3. **Combined Sales & Collection Dashboard**
+   - **Comparative Analysis**:  
+     - Sales vs. Collections by region (e.g., SOUTH-EAST: **£1.5bn** vs. **£1.9bn**).  
+   - **Monthly Overlays**:  
+     - Dual-axis trends for holistic performance tracking.  
 
-Customer base segmentation
+---
 
-These insights help stakeholders in performance evaluation, decision-making, and revenue forecasting.
+## Technical Implementation
 
-📌 Key Highlights
+### Tools & Technologies
+- **Power BI**: Interactive visualizations and drill-throughs.  
+- **Excel**: Data cleansing and pivot tables.  
+- **DAX**: Measures for KPIs like:  
+  ```dax
+  Collection Rate = DIVIDE([Total Collected], [Total Sales], 0)
+Data Model
+Star Schema: Fact tables for sales/collections linked to dimension tables (Customers, Dates, Regions).
 
-🚀 Overall Performance
+Dynamic Filters: Slicers for Region, Month/Year, and Customer Tier.
 
-Total Sales: ₦10 Billion+
+How to Use
+Navigation:
 
-Total Collections: ₦10 Billion+
+Use slicers to filter by region, timeframe, or customer.
 
-Total Customers: 382
+Hover over charts for tooltip details (e.g., exact % values).
 
-Top 50 Customers: Account for over 80% of revenue in both Sales and Collections
+Data Refresh:
 
-**🌍 Performance by Region**
+Connect to your data source via Power Query Editor.
 
-Region
+Setup Instructions
+Prerequisites:
 
-Sales (₦ bn)
+Power BI Desktop.
 
-Collections (₦ bn)
+Excel files with raw sales/collection data.
 
-**Lagos**
+Steps:
 
-3.1
+bash
+git clone https://github.com/your-repo/sales-dashboards.git
+Open .pbix files in Power BI Desktop.
 
-3.0
+Update data source paths if needed.
 
-**South-South**
+DAX Examples
+dax
+// Top Customer Contribution
+Top Customer Sales = 
+CALCULATE(
+    [Total Sales],
+    TOPN(50, Customers, [Total Sales], DESC)
+)
+Contributing
+Enhancements:
 
-1.6
 
-1.8
-
-**West**
-
-1.6
-
-1.7
-
-**South-East**
-
-1.5
-
-1.9
-
-**Middle-Belt**
-
-1.0
-
-1.2
-
-**North**
-
-1.1
-
-1.0
-
-**👥 Top 6 Customers (Sales & Collection Combined)**
-
-**Customer Name**
-
-**Total Value (₦ bn)**
-
-EUGOPHARM NIG
-
-0.38
-
-OLORUNKOSESEJUS...
-
-0.35
-
-LIFEMED PHARMACY
-
-0.34
-
-PS GENERAL
-
-0.26
-
-NEW HEALTH PHARMACY
-
-0.26
-
-KENNY PRINCE
-
-0.25
-
-⚡ Insight: The top 50 customers contributed over 80% of the overall revenue, highlighting a high concentration of revenue among a few clients.
-
-**📈 Regional Deep-Dive: South-East**
-
-Sales: ₦2.3 Billion
-
-Top Customer: LIFEMED PHARMACY (₦0.19B)
-
-Customer Count: 67
-
-Sales Concentration: Top 50 customers contributed 66%
-
-Collections Efficiency: Ranged between 34% and 144% across sub-regions
-
-**🔎 Findings**
-
-High concentration of revenue among a few key customers introduces risk and highlights the need for customer diversification.
-
-Some regions like Lagos and South-East show strong performance, while others such as North and Middle-Belt show room for growth.
-
-Collections do not always align with sales in several regions, indicating potential issues with credit management and receivables.
-
-**🔧 Solutions & Business Impact**
-
-The dashboard can support:
-
-Customer Risk Management: Identifying customers with high sales but low collection performance.
-
-Regional Strategy Alignment: Focused efforts to improve sales in underperforming regions.
-
-Sales Planning & Forecasting: Using historical trends to forecast monthly revenue.
-
-Credit Control Policies: Enhancing follow-ups and terms for customers with poor payment behavior.
-
-**✅ Steps Taken**
-
-Data Gathering: Sales and collection data sourced from company ERP system.
-
-Cleaning & Transformation: Using Excel to clean, structure, and aggregate data.
-
-Dashboard Design: Created regionally segmented, time-based interactive visuals in Power BI.
-
-Analysis: Performance tracked across customers and regions to identify trends and anomalies.
-
-Documentation & Reporting: Exported key views and metrics as PDFs for sharing.
-
-📃 Dashboards Preview 
-
-![Image](https://github.com/user-attachments/assets/2e32b349-847b-4311-89e6-a8f7b5216c6c)
-
-![Image](https://github.com/user-attachments/assets/c0ca22cf-6cad-4aaa-97a8-57af08cd8b9a)
-
-![Image](https://github.com/user-attachments/assets/d94596be-df38-464f-aa1b-cb1e626f1e0d)
-
-![Image](https://github.com/user-attachments/assets/cdf4d2ed-7b5b-4d10-a2cd-699f72985fee)
-
-📊 1. Overall Sales and Collections Summary
-
-![Image](https://github.com/user-attachments/assets/b8a975a4-1391-4b80-83af-07c31abdde44)
-
-🌍 2. Regional Performance Breakdown
-
-![Image](https://github.com/user-attachments/assets/a8021be2-7c8c-4019-8dbe-eed5c4d24b00)
-
-👥 3. Top 6 Customers
-
-![Image](https://github.com/user-attachments/assets/82b236b1-5d56-4810-9de0-31b67d74391f)
-
-📊 4. Monthly Performance Trends
-
-![Image](https://github.com/user-attachments/assets/a17851e5-c3f1-413c-af59-df1c44b41870)
-
-🛠️ Tools Used
-
-Data Visualization: Microsoft Power BI dashboards
-
-Data Preparation: Excel-based aggregation and transformation
-
-Delivery Format: PDF Export of Interactive Dashboard
-
-📋 Use Cases
-
-Sales & Marketing Strategy
-
-Regional Manager Performance Review
-
-Credit Control and Collections
-
-Key Customer Relationship Management
-
-📬 Contact
-
-Author: AKPOVWOVWO OKEOGHENE JOHN Role: Data Analyst | BI SpecialistEmail: jbignames@gmail.com LinkedIn: linkedin.com/in/okeoghene-akpowwowo-0291a4150 | GitHub Handle: https://github.com/BigNameZ
+Contact
+📧 Email: jbignames@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/okeoghene-akpovwovwo-0291a4150/
